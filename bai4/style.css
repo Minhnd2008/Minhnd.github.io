@@ -1,0 +1,95 @@
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+*{
+	box-sizing: border-box;
+}
+@keyframes name {
+		0%   {background-color: yellow; }
+		15%  {background-color: green;}
+		30%  {background-color: blue;}
+		45%  {background-color: grey;}
+		60%  {background-color: purple;}
+		75%  {background-color: red;}
+		100% {background-color: orange;}
+}
+@keyframes move{
+	0% {left: 0px; opacity: 1;}
+	10%{left: 200px; opacity: 0.9;}
+	20%{left: 300px; opacity: 0.7;}
+	40%{left: 350px; opacity: 0.5;}
+	60%{left: 450px; opacity: 0.3;}
+	80%{left: 500px; opacity: 0.2;}
+	100%{left: 600px; opacity: 0;}
+}
+@keyframes wide{
+	0%{width: 100%;height: 100%}
+	25%{width: 75%;height: 75%}
+	50%{width: 50%;height: 50%}
+	75%{width: 25%;height: 25%}
+	100%{width:0%;height: 0%}
+}
+.content{
+	position: relative;
+    width: 100%;
+}
+.title{
+	max-width: 100%;
+    margin: auto;
+    /* border: 1px solid green; */
+    padding: 5px;
+    background-color: yellow;
+    color: purple;
+    text-align: center;
+    animation: name 10s ease infinite;
+   
+}
+.menu{
+	width: 100%;
+	height: 47px;
+}
+.item{
+	float:left;ss
+	margin: 15px;
+}
+.hinhanh{
+	position: relative;
+	float:left;
+	width: 32%;           
+	height: 320px;
+	margin: 10px;
+}
+div.hinhanh img:hover{
+	border-radius: 50%;
+	opacity: 0.5;
+}
+div.hinhanh img{
+	float: left;
+    width: 100%;
+    height: 320px;
+    padding: 0px;
+    animation: wide 10s ease infinite;
+}
+footer{
+	position: absolute;
+	left: 0px;
+	bottom: -550px;
+    animation: move 10s linear infinite;
+}
+a:link{
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: blue;
+    text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+}
+a:active{
+	color:grey;
+	text-decoration:none;
+}
