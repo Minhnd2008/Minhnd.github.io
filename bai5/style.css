@@ -1,0 +1,286 @@
+*{
+	box-sizing: border-box;
+}
+@keyframes move{
+	0%{opacity: 0; font-size:5px; top:20px;left: 100px;}
+	5%{opacity: 0;font-size: 5px; top :50px;left: 200px;}
+	10%{opacity: 0.5;font-size: 10px;top: 100px;left: 300px;}
+	50%{opacity: 1;font-size: 30px;top:250px;left: 400px;}
+	90%{opacity: 0.5;font-size: 10px;top: 100px;left: 300px;}
+	95%{opacity: 0;font-size: 5px;top:50px;left: 200px;}
+	100%{opacity: 0;font-size: 5px;top:20px;left: 100px}
+}
+@keyframes move3{
+	0%{opacity: 0; font-size:5px; top:8px;right: 166px;}
+	5%{opacity: 0;font-size: 5px; top :100px;right: 266px;}
+	10%{opacity: 0.5;font-size: 10px;top: 200px;right: 400px;}
+	50%{opacity: 1;font-size: 30px;top:260px;right: 540px;}
+	70%{opacity: 0.5;font-size: 10px;top: 360px;right: 540px;}
+	95%{opacity: 0;font-size: 5px;top:460px;left: 540px;}
+	100%{opacity: 0;font-size: 5px;top:500px;left: 540px}
+}
+@keyframes move4{
+	0%{opacity: 0; font-size:0px; bottom:-230px;right: 165px;}
+	5%{opacity: 0;font-size: 5px; bottom:150px;right: 165px;}
+	10%{opacity: 0.5;font-size: 10px;bottom: 150px;right: 420px;}
+	30%{opacity: 1;font-size: 20px;bottom:150px;right: 470px;}
+	50%{opacity: 1;font-size: 30px;bottom: 150px;right: 600px;}
+	70%{opacity: 0.5;font-size: 20px;bottom: 150px;right: 600px;}
+	80%{opacity: 0;font-size: 10px;bottom: 250px;right: 600px;}
+	95%{opacity: 0;font-size: 5px;bottom:350px;right: 600px;}
+	100%{opacity: 0;font-size: 5px;bottom:400px;right: 600px}
+}
+@keyframes move5{
+	0%{opacity: 0; font-size:3px; top:8px;left: 175px;}
+	10%{opacity: 0;font-size: 5px; top:70px;left: 175px;}
+	25%{opacity: 0;font-size: 10px;top:100px;left:175px;}
+	40%{opacity: 0.5;font-size: 10px;top:250px;left:300px;}
+	65%{opacity: 1;font-size: 30px;top:250px;left: 450px;}
+	70%{opacity: 0.5;font-size: 10px;top: 250px;left: 300px;}
+	80%{opacity: 0;font-size: 5px;bottom:100px;left: 175px;}
+	95%{opacity: 0;font-size: 3px;bottom:70px;left: 175px}
+	100%{opacity: 0;font-size: 3px;bottom:70px;left: 175px}
+}
+@keyframes move9{
+	0%{opacity: 0; font-size:5px; top:8px;left: 540px;}
+	10%{opacity: 0;font-size: 5px; top:40px;left: 540px;}
+	20%{opacity: 0.5;font-size: 10px;top: 100px;left: 540px;}
+	50%{opacity: 1;font-size: 30px;top:250px;left: 540px;}
+	70%{opacity: 0.5;font-size: 10px;top: 100px;left: 540px;}
+	80%{opacity: 0;font-size: 10px;top: 50px;left: 540px;}
+	95%{opacity: 0;font-size: 5px;top:30px;left: 200px;}
+	100%{opacity: 0;font-size: 5px;top:20px;left: 100px}
+}
+@keyframes move6{
+	0%{opacity: 0; font-size:5px; top:8px;left: 540px;}
+	10%{opacity: 0;font-size: 5px; top:40px;left: 540px;}
+	20%{opacity: 0.5;font-size: 10px;top: 100px;left: 540px;}
+	50%{opacity: 1;font-size: 30px;top:250px;left: 540px;}
+	70%{opacity: 0.5;font-size: 10px;top: 100px;left: 540px;}
+	80%{opacity: 0;font-size: 10px;top: 50px;left: 540px;}
+	95%{opacity: 0;font-size: 5px;top:30px;left: 200px;}
+	100%{opacity: 0;font-size: 5px;top:20px;left: 100px}
+}
+@keyframes end{
+	0%{opacity: 0;top: 4px;left: 50px;width: 100px;height: 80px;}
+	25%{opacity: 0;top: 8px;left: 177px;width: 200px;height: 150px;}
+	50%{opacity: 1;top: 8px;left: 177px;width: 400px;height: 350px;}
+	75%{opacity: 1;top: 8px;left: 178px;width: 600px;height: 450px;}
+	100%{opacity: 1;top: 8px;left: 178px;width:1005px;height: 600px;}
+}
+@keyframes slide{
+	0%{opacity: 0;top: 8px;left: 175px;width:0%}
+	5%{opacity: 0;top: 28px;left: 325px;width:5%}
+	10%{opacity: 0;top: 40px;left: 570px;width: 10%}
+	15%{opacity: 0.3;top: 60px;left: 720px;width: 15%}
+	20%{opacity: 1;top: 80px;left: 440px;width:20%}
+	50%{opacity: 1;top: 100px;left: 440px;width: 25%}
+	65%{opacity: 1;top: 100px;left: 440px;width: 25%}
+	80%{opacity: 0.3;top: 120px;left: 540px;width: 25%}
+	85%{opacity: 0;top: 140px;left: 620px;width: 15%}
+	90%{opacity: 0;top: 160px;left: 670px;width: 10%}
+	95%{opacity: 0;top: 200px;left: 725px;width: 5%}
+	100%{opacity: 0;top: 300px;left: 875px;width: 0%}
+}
+@keyframes slide1{
+	0%{opacity: 0;top: 8px;left: 175px;width:0%}
+	5%{opacity: 0;top: 28px;left: 225px;width:5%}
+	10%{opacity: 0;top: 40px;left: 270px;width: 10%}
+	15%{opacity: 0;top: 60px;left: 320px;width: 15%}
+	20%{opacity: 0;top: 80px;left: 340px;width:20%}
+	50%{opacity: 0.5;top: 100px;left: 340px;width: 20%}
+	65%{opacity: 1;top: 100px;left: 500px;width: 20%}
+	80%{opacity: 0.5;top: 100px;left: 640px;width: 20% }
+	85%{opacity: 0;top: 100px;left: 720px;width: 15%}
+	90%{opacity: 0;top: 100px;left: 770px;width: 10%}
+	95%{opacity: 0;top: 28px;left: 225px;width: 5%}
+	100%{opacity: 0;top: 8px;left: 175px;width: 0%}
+}
+@keyframes slide2{
+	0%{opacity: 0;top: 8px;left: 175px;width:0%}
+	5%{opacity: 0;top: 28px;left: 225px;width:5%}
+	10%{opacity: 0;top: 40px;left: 270px;width: 7%}
+	15%{opacity: 0;top: 60px;left: 320px;width: 10%}
+	20%{opacity: 0;top: 80px;left: 340px;width:15%}
+	50%{opacity: 1;top: 100px;left: 540px;width: 23%}
+	65%{opacity: 1;top: 100px;left: 740px;width: 23%}
+	80%{opacity: 1;top: 100px;left: 840px;width: 20%}
+	85%{opacity: 0;top: 60px;left: 320px;width: 15%}
+	90%{opacity: 0;top: 40px;left: 270px;width: 10%}
+	95%{opacity: 0;top: 28px;left: 225px;width: 5%}
+	100%{opacity: 0;top: 8px;left: 175px;width: 0%}
+}
+@keyframes inox{
+	0%{font-size: 10px;opacity: 0.2;color: orange;}
+	25%{font-size: 15px;opacity: 0.4;color: yellow;}
+	50%{font-size: 20px;opacity: 0.6;color: green;}
+	75%{font-size: 30px;opacity: 0.8;color: pink;}
+	100%{font-size: 35px;opacity: 1;color: red;}
+}
+.wrap{
+	width:1000px;
+	margin: auto;
+}
+#content{
+	overflow: hidden;
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	background-image: url("image/background.jpg");
+	background-repeat: no-repeat;
+	box-shadow: 5px 5px 5px 0px;
+}
+#text{
+	width: 30%;
+	height: 550px;
+	float: left;
+}
+#image{
+	width: 70%;
+	height: 550px;
+	float: right;
+}
+div img{
+	width: 100px;
+	opacity: 0;
+	float: right;
+}
+div p.title2{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	animation: move 15s linear;
+	animation-delay: 3s;
+}
+div p.title3{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	animation: move3 15s linear;
+	animation-delay:13s;
+}
+div img#photo1{
+	position: absolute;
+	animation: slide 10s linear;
+	animation-delay: 25s;
+}
+div img#photo2{
+	position: absolute;
+	animation: slide1 10s linear;
+	animation-delay: 35s;
+}
+div p.title4{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	animation: move4 20s linear;
+	animation-delay:40s;
+}
+div p.title5{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	color: red;
+	animation:move5 15s linear;
+	animation-delay:55s;
+}
+div img#photo3{
+	position: absolute;
+	animation: slide1 10s linear;
+	animation-delay: 70s;
+}
+div img#photo4{
+	position: absolute;
+	animation: slide 10s linear;
+	animation-delay: 80s;
+}
+div img#photo5{
+	position: absolute;
+	animation: slide1 10s linear;
+	animation-delay: 90s;
+}
+div img#photo6{
+	position: absolute;
+	animation: slide2 10s linear;
+	animation-delay: 100s;
+}
+div img#photo7{
+	position: absolute;
+	animation: slide 10s linear;
+	animation-delay: 110s;
+}
+div p.title6{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	color: yellow;
+	animation: move6 20s linear;
+	animation-delay:120s;
+}
+div img#photo11{
+	position: absolute;
+	animation: slide1 10s linear ;
+	animation-delay: 135s;
+}
+div img#photo12{
+	position: absolute;
+	animation: slide2 10s linear ;
+	animation-delay: 145s;
+}
+div img#photo13{
+	position: absolute;
+	animation: slide 10s linear;
+	animation-delay: 155s;
+}
+div p.title7{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	color: pink;
+	animation: move 20s linear;
+	animation-delay:165s;
+}
+div img#photo8{
+	position: absolute;
+	animation: slide1 20s linear;
+	animation-delay: 185s;
+}
+div p.title8{
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+	color: red;
+	animation: move 20s linear;
+	animation-delay:200s;
+}
+div img#photo9{
+	position: absolute;
+	animation: slide2 10s linear;
+	animation-delay: 215s;
+}
+div p.title9{
+	position: absolute;
+	opacity: 0;
+	color: red;
+	animation: move9 20s linear;
+	animation-delay:225s;
+}
+div img#photo14{
+	position: absolute;
+    animation: end 15s linear;
+    animation-delay: 235s;
+    animation-fill-mode: forwards;
+}
+footer{
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+footer p{
+	animation: inox 15s linear;
+	animation-delay: 235s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
